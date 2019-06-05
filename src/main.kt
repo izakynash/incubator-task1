@@ -26,8 +26,11 @@ fun main (args: Array<String>)
 
     println("\nText contains ${text.size} words \nTOP10")
 
+    var i = 0
     for (word in textMapSorted) {
         println("${word.value} - ${word.key}")
+        i++
+        if (i==10) break
     }
 }
 
